@@ -34,7 +34,7 @@ from sklearn import datasets
 from sklearn.mixture import GaussianMixture
 from sklearn.model_selection import StratifiedKFold
 
-filename = 'file://localhost/C:/Users/Mark/Documents/Test/processed.cleveland.csv'
+filename = # Add the url for the heart attack data. Found at: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
 attributes = ['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal','num']
 dataset = read_csv(filename, names = attributes)
 
