@@ -6,35 +6,18 @@ import sys
 import scipy
 import numpy
 
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-from matplotlib import pyplot
-
 import pandas
 import sklearn
-import time
 
 from pandas import read_csv
-from pandas.plotting import scatter_matrix
 
 from sklearn.model_selection import train_test_split
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import StratifiedKFold
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import accuracy_score
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 from sklearn.linear_model import LinearRegression
 from sklearn import datasets
-from sklearn.mixture import GaussianMixture
-from sklearn.model_selection import StratifiedKFold
 
-filename = # Add the url for the heart attack data. Found at: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
+filename = 'file://localhost/C:/Users/Mark/Documents/Test/processed.cleveland.csv'
 attributes = ['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal','num']
 dataset = read_csv(filename, names = attributes)
 
