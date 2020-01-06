@@ -22,7 +22,7 @@ attributes = ['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exan
 dataset = read_csv(filename, names = attributes)
 
 # account for missing data values
-dataset[['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal','num']]=dataset[['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal','num']].replace('?', numpy.NaN)
+dataset[attributes]=dataset[attributes].replace('?', numpy.NaN)
 dataset.dropna(inplace=True)
 
 array = dataset.values
