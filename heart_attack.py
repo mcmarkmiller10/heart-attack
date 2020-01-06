@@ -17,7 +17,7 @@ from sklearn.svm import SVC
 from sklearn.linear_model import LinearRegression
 from sklearn import datasets
 
-filename = 'file://localhost/C:/Users/Mark/Documents/Test/processed.cleveland.csv'
+filename = 'file://localhost/C:/......./processed.cleveland.csv'
 attributes = ['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal','num']
 dataset = read_csv(filename, names = attributes)
 
